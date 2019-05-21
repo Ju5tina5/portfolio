@@ -1,0 +1,42 @@
+.header {
+    width: 100%;
+    grid-area: head;
+    text-align: center;
+    background-color: darkcyan;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-areas: 'img . social';
+}
+
+img {
+    grid-area: img;
+    filter: grayscale(10);
+}
+.social {
+    grid-area: social;
+    text-align: center;
+
+    .fa {
+        color: white;
+        margin: 10px;
+        padding: 5px;
+        background-color: black;
+        border-radius: 10px;
+        font-size: 20px;
+        line-height: 30px;
+    } 
+
+    .fa:hover {
+        color: black;
+        background-color: white;
+    }
+   
+}
+
+
+
+
+
+
+

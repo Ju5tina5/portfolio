@@ -1,0 +1,17 @@
+
+.App {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+                        'head head head'
+                        'hero hero section'
+                        'hero hero section'
+                        'foot foot foot';
+ 
+}
+
+
+
