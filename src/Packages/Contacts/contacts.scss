@@ -1,0 +1,65 @@
+.contactInfo {
+    grid-area: contact;
+    background-color: aquamarine;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:'. top icons'
+                        'inf inf inf';
+                        
+
+    h2 {
+        grid-area: top;
+        font-size: 25px;
+    }
+    .Mail {
+        grid-area: inf;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'text text btn';
+        p {
+            grid-area: text;
+            font-weight: 700;
+        }
+        a {
+            grid-area: btn;
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 5px;
+            transition: 0.75s;
+        }  
+        a:hover {
+            opacity: 0.95;
+            transition: 0.75s;
+            border: 2px solid  blue;
+            background-color: white;
+            color: blue;
+        }
+    }
+    .contactsSocial {
+        grid-area: icons;
+
+        .fa{
+            color: white;
+            background-color: black;
+            font-size: 20px;
+            margin: 5px;
+            line-height: 30px;
+            padding: 8px;
+            border-radius: 15px;
+            transition: 0.70s;
+        } 
+        .fa:hover {
+            color: black;
+            background-color: white;
+            transition: 0.70s;
+            transform: rotate(360deg);
+            
+        }
+        
+    }
+}

@@ -1,0 +1,90 @@
+.contactInfo {
+  grid-area: contact;
+  background-color: aquamarine;
+  padding: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: '. top icons' 'inf inf inf';
+}
+
+.contactInfo h2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: top;
+  font-size: 25px;
+}
+
+.contactInfo .Mail {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: inf;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'text text btn';
+}
+
+.contactInfo .Mail p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: text;
+  font-weight: 700;
+}
+
+.contactInfo .Mail a {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: btn;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.contactInfo .Mail a:hover {
+  opacity: 0.95;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  border: 2px solid  blue;
+  background-color: white;
+  color: blue;
+}
+
+.contactInfo .contactsSocial {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: icons;
+}
+
+.contactInfo .contactsSocial .fa {
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  margin: 5px;
+  line-height: 30px;
+  padding: 8px;
+  border-radius: 15px;
+  -webkit-transition: 0.70s;
+  transition: 0.70s;
+}
+
+.contactInfo .contactsSocial .fa:hover {
+  color: black;
+  background-color: white;
+  -webkit-transition: 0.70s;
+  transition: 0.70s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+/*# sourceMappingURL=contacts.css.map */

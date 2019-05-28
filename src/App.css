@@ -7,6 +7,6 @@
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-      grid-template-areas: 'head head head' 'hero hero section' 'hero hero section' 'foot foot foot';
+      grid-template-areas: 'head head head' 'hero hero section' 'hero hero section' 'works works works' 'contact contact contact' 'foot foot foot';
 }
 /*# sourceMappingURL=App.css.map */
